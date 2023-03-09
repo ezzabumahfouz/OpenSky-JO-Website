@@ -3,12 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* font-family: sans-serif; */
-  /* font-family: 'Montserrat'; */
   font-family: "Montserrat";
-}
-
-html {
   scroll-behavior: smooth;
 }
 
@@ -49,12 +44,17 @@ html {
 .navbar li a {
   font-size: 24px;
   color: white;
+  transition: 0.2s;
   text-decoration: none;
+}.navbar li a:hover {
+  letter-spacing: 1px;
+  font-size: 25px;
 }
+
 
 /*  */
 .dropbtn {
-  background-color: #11999E;
+  background-color: #11999e;
   color: white;
   padding: 8px 0px;
   /* font-size: 16px; */
@@ -63,21 +63,19 @@ html {
   min-width: 160px;
   border-radius: 10px;
   font-size: 24px;
-
 }
 
 .dropdown {
   position: relative;
   display: block;
-
 }
 .dropdown img {
-  width:80px ;
+  width: 80px;
   height: 55px;
   background-size: contain;
 }
 .dropdown img:hover {
-  width:85px ;
+  width: 85px;
 }
 
 .dropdown-content {
@@ -88,10 +86,7 @@ html {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 10px;
-  margin-top: 5px;
-
 }
-
 
 .dropdown-content a {
   color: black;
@@ -100,13 +95,13 @@ html {
   display: block;
   text-align: center;
   transition: 0.2s;
-
+  height: 55px;
+  background-size: contain;
 }
 
 .dropdown-content a:hover {
   background-color: #ddd;
   border-radius: 10px;
-
 }
 
 .dropdown:hover .dropdown-content {
@@ -114,7 +109,7 @@ html {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #11999E;
+  background-color: #11999e;
 }
 
 /*  */
@@ -179,13 +174,15 @@ h4 {
   padding-top: 196px;
   padding-bottom: 68px;
 }
-.classFive h4 {
+.carousal h4 {
   text-align: center;
   color: #11999e;
   font-size: 128px;
   /* line-height: 156.03px; */
+  padding-top: 0px;
   font-weight: 400;
 }
+
 h5 {
   text-align: center;
   color: black;
@@ -252,10 +249,30 @@ h6 {
   margin: 130px;
   position: absolute;
   background: linear-gradient(180deg, #11999e 0%, #9ed4d4 68.18%);
+  transition: 0.5s;
+  opacity: 0.7;
+
+  /* cursor: pointer; */
 
   /* top: 200px;
     left: 135px; */
 }
+.aboutUs .val .center .centerButton:hover {
+  /* position:   absolute; */
+  transform: rotate(360deg);
+  height: 169px;
+  width: 169px;
+  margin: 125px;
+  opacity: 1;
+
+
+
+
+
+
+}
+
+
 
 .aboutUs .val .center .centerButton button {
   margin: auto;
@@ -265,9 +282,10 @@ h6 {
   font-size: 24px;
   margin-top: 63px;
   cursor: pointer;
+  transition: 0.3s;
 }
 .aboutUs .val .center .centerButton button:active {
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .aboutUs .val .circle1 {
@@ -276,9 +294,12 @@ h6 {
   left: 60px;
   width: 130px;
   height: 130px;
+  color: #f5f5f5;
   border-radius: 50%;
   background-color: black;
   text-align: center;
+  animation-name: example1;
+  animation-duration: 1s;
 }
 
 .aboutUs .val .circle2 {
@@ -286,20 +307,91 @@ h6 {
   top: 60px;
   right: 60px;
   width: 130px;
+  color: #000000;
   height: 130px;
   border-radius: 50%;
+  text-align: center;
+
   background-color: black;
+  animation-name: example2;
+  animation-duration: 1s;
 }
 
 .aboutUs .val .circle3 {
   bottom: 40px;
-  right: 40%;
+  right: 260px;
   width: 130px;
   height: 130px;
   border-radius: 50%;
   background-color: black;
   position: absolute;
+  animation-name: example3;
+  animation-duration: 1s;
+  justify-content: center;
 }
+.aboutUs .val a {
+  text-decoration: none;
+  transition: 0.2s;
+  display: block;
+  margin: auto;
+  color: rgb(244, 244, 244);
+  margin-top: 50px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.9;
+}
+.aboutUs .val a:hover {
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: white;
+
+
+}
+
+@keyframes example1 {
+  0% {
+    left: 300px;
+    top: 420px;
+    opacity: 0;
+  
+  }
+  100% {
+    top: 60px;
+    left: 60px;
+    opacity: 1;
+
+  }
+}
+@keyframes example2 {
+  0% {
+    right: 300px;
+    top: 420px;
+    opacity: 0;
+
+  }
+  100% {
+    top: 60px;
+    right: 60px;
+    opacity: 1;
+
+  }
+}
+@keyframes example3 {
+  0% {
+    right: 300px;
+    bottom: 420px;
+    opacity: 0;
+
+  }
+  100% {
+    bottom: 40px;
+    right: 260px;
+    opacity: 1;
+
+  }
+}
+
 /*  */
 .product {
   width: 100%;
@@ -415,7 +507,6 @@ footer .list ul a {
   background-color: transparent;
   overflow: hidden;
   margin-top: 134px;
-
 }
 #scene #left-zone {
   background-color: transparent;
@@ -909,4 +1000,19 @@ div.image-loader img {
     transition: opacity 500ms ease-in, transform 500ms ease-in;
     transition-delay: 500ms;
   }
+}
+
+.our-partners {
+  width: 100%;
+}
+.our-partners .partners {
+  width: 100%;
+
+  justify-content: space-evenly;
+  display: inline-flex;
+}
+.our-partners img {
+  margin-top: 89px;
+  margin-bottom: 444px;
+  background-size: contain;
 }
