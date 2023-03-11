@@ -22,7 +22,7 @@
             <li><a href="#section2">Services</a></li>
             <li><a href="#section3">Product</a></li>
             <li><a href="screens/news.html">News</a></li>
-            <li><a href="screens/getintouchPage.html">Get in Touch</a></li>
+            <li><a href="screens/getintouchPage.html#sectionx">Get in Touch</a></li>
 
         </ul>
         <div class="dropdown">
@@ -42,6 +42,8 @@
     <!-------------- WELCOME SCREEN --------------->
 
 
+
+    
 
 
 
@@ -131,7 +133,29 @@ box-shadow: -4px 6px 15px -3px rgba(255,255,255,0.73);
             padding: 100px 62px;
             font-size: 128px;
             text-shadow: -2px 5px 6px rgba(17,153,158,0.57);
+            -webkit-animation: leftToRight 1.0s linear;
+            animation: zoomin 1.0s linear;
+
+
+            @keyframes leftToRight {
+            0% {
+                /* -webkit-transform: scaleY(1.3);
+                -webkit-transform: scaleX(1.1); */
+
+                transform: scaleY(1.9);
+            }
+
+            100% {
+                /* -webkit-transform: scaleY(1.0);
+                -webkit-transform: scaleX(1.0); */
+
+                transform: scaleY(1.0);
+
+            }
+
+
         }
+    }
 
 
         /* (B) HIDE */
@@ -147,10 +171,19 @@ box-shadow: -4px 6px 15px -3px rgba(255,255,255,0.73);
         }
     </style>
     <script>
+                if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+            document.getElementById("collapse").classList.toggle("hide");
+} 
+else if (performance.navigation.type == performance.navigation.TYPE_BACK_FORWARD) {
+            document.getElementById("collapse").classList.toggle("hide");
+} 
+
+
         function toggle() {
             document.getElementById("collapse").classList.toggle("hide");
 
         }
+
     </script>
 
     <div class="ourStory" id="section1">
@@ -480,10 +513,10 @@ box-shadow: -4px 6px 15px -3px rgba(255,255,255,0.73);
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="line"></div>
-        <h1>
+        <!-- <div class="line"></div> -->
+        <!-- <h1>
             open sky
-        </h1>
+        </h1> -->
         <div class="arrow">
             <img src="../assets/icons/up-arrow.png">
         </div>
