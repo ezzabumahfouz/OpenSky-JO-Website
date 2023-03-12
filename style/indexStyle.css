@@ -128,6 +128,9 @@
   line-height: 36.94px;
   letter-spacing: 2%;
   margin: 5px;
+  /* width: 100%; */
+  text-align: center;
+  background-color: #100F0F;
 }
 
 h1 {
@@ -616,7 +619,7 @@ footer .list ul a {
   animation-timing-function: ease-out;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   flex-direction: column;
 }
 
