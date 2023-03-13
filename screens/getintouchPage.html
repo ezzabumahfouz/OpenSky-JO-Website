@@ -6,32 +6,42 @@
     <link rel="stylesheet" href="../style/getintouchStyle.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Get in Touch | Open Sky</title>
 </head>
 
 <body>
     <header class="navbar">
 
-        <img src="../assets/images/opanSkySoftware.png" class="logo">
-        <ul>
-            <li><a href="javascript:history.back()">Home</a></li>
-            <li><a href="javascript:history.back()">Services</a></li>
-            <li><a href="javascript:history.back()">Product</a></li>
-            <li><a href="news.html">News</a></a></li>
-            <li><a href="#">Get in Touch</a></li>
-
-        </ul>
+        <a href="#home"><img class="logo" src="/assets/images/opanSkySoftware.png"></a>
         <div class="dropdown">
-            <button class="dropbtn"><img src="../assets/images/jordan (1).png"></button>
+            <button class="dropbtn">About
+                <i class="fa fa-caret-down"></i>
+            </button>
             <div class="dropdown-content">
-                <a href="#"><img src="../assets/images/jordan (1).png"></a>
-                <a href="#"><img src="../assets/images/egypt (1).png"></a>
-                <a href="#"><img src="../assets/images/united-arab-emirates (1).png"></a>
+                <a href="javascript:history.back()">About Us</a>
+                <a href="javascript:history.back()">Management</a>
             </div>
         </div>
 
+        <!-- <a href="javascript:history.back()">Home</a> -->
+        <a href="javascript:history.back()">Business Solution</a>
+        <a href="javascript:history.back()">Product</a>
+        <a href="/screens/news.html">News</a>
+        <a href="/screens/getintouchPage.html">Get in Touch</a>
+        <div class="dropdown">
+            <div class="dropdown">
+                <a href="javascript:history.back()"><img class="flag" src="/assets/images/jordan (1).png"></a>
+
+
     </header>
+
     <div class="header">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3383.8042417131023!2d35.873955684908765!3d31.993321781215723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b5f06c7fa967f%3A0x4d8025e2dc42801b!2sOpen%20sky%20Jordan!5e0!3m2!1sar!2sjo!4v1678718489567!5m2!1sar!2sjo" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
         <div class="line"></div>
         <h1>
             Contact Informations <br>
@@ -86,6 +96,21 @@
 
 
 
+    </div>
+
+    <div class="contact">
+        <h1>We are ready to answer
+            all your questions</h1>
+        <h2>fill out the form and will contact you </h2>
+        <form class="contact-form" action="">
+            <input type="text" id="name" name="name" placeholder="Business name">
+            <input type="text" id="city" name="city" placeholder="City">
+            <input type="text" id="person1" name="person1" placeholder="Contact person">
+            <input type="text" id="person2" name="person2" placeholder="Contact person">
+            <input type="text" id="phone" name="phone" placeholder="Contact number">
+            <input type="text" id="email" name="email" placeholder="Email">
+            <input type="text" id="message" name="message" placeholder="Message">
+        </form>
     </div>
 
 </body>
