@@ -170,3 +170,20 @@ margin-bottom: 60px;
   text-align: start;
   color: black;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #c8c8c8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5EB7B7;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #11999e;
+}

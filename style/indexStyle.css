@@ -122,15 +122,15 @@
 
 h1 {
   text-align: center;
-  font-size: 120px;
+  font-size: 55px;
   font-weight: 700;
 }
 
 .ourStory p {
-  font-size: 32px;
+  font-size: 25px;
   font-weight: 500;
   line-height: 50px;
-  padding-top: 94px;
+  padding-top: 55px;
   width: 80%;
   margin: auto;
 }
@@ -142,14 +142,14 @@ h1 {
 
 .aboutUs h1 {
   text-align: center;
-  font-size: 120px;
+  font-size: 55px;
   font-weight: 700;
   padding-top: 186px;
 
 }
 
 .aboutUs h2 {
-  font-size: 32px;
+  font-size: 25px;
   font-weight: 500;
   line-height: 50px;
   padding-top: 94px;
@@ -160,16 +160,16 @@ h1 {
 h4 {
   text-align: center;
   color: #11999e;
-  font-size: 128px;
-  line-height: 156.03px;
+  font-size: 55px;
+  /* line-height: 156.03px; */
   font-weight: 400;
-  padding-top: 196px;
-  padding-bottom: 68px;
+   padding-top: 106px;
+  /* padding-bottom: 68px;  */
 }
 .carousal h4 {
   text-align: center;
   color: #11999e;
-  font-size: 128px;
+  font-size: 55px;
   /* line-height: 156.03px; */
   padding-top: 0px;
   font-weight: 400;
@@ -178,15 +178,17 @@ h4 {
 h5 {
   text-align: center;
   color: black;
-  font-size: 128px;
+  font-size: 55px;
   font-weight: 600;
   line-height: 156.03px;
 }
 h6 {
   text-align: center;
   color: #100f0f;
-  font-size: 72px;
-  font-weight: 300;
+  font-size: 40px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  word-spacing: 2px;
 }
 
 #container {
@@ -211,7 +213,7 @@ h6 {
   text-align: center;
   font-weight: 600;
   user-select: none;
-  font-size: 128px;
+  font-size: 55px;
   width: 100%;
 }
 
@@ -270,7 +272,6 @@ h6 {
 }
 .aboutUs .val .center .centerButton button:active {
   letter-spacing: 2px;
-  font-weight: 700;
 }
 
 .aboutUs .val .circle1 {
@@ -303,7 +304,7 @@ h6 {
 }
 
 .aboutUs .val .circle3 {
-  bottom: 40px;
+  bottom: 5px;
   right: 260px;
   width: 130px;
   height: 130px;
@@ -373,7 +374,7 @@ h6 {
 
   }
   100% {
-    bottom: 40px;
+    bottom: 5px;
     right: 260px;
     opacity: 1;
     transform: rotate(0deg);
@@ -401,8 +402,8 @@ footer .line {
   margin: auto;
 }
 footer .arrow img {
-  width: 30px;
-  height: 35px;
+  width: 23px;
+  height: 23px;
   margin: auto;
   display: block;
 }
@@ -412,10 +413,10 @@ footer button {
   background-color: transparent;
   border: 0;
   text-decoration: underline;
-  font-size: 32px;
-  line-height: 39.01px;
+  font-size: 20px;
+  /* line-height: 39.01px; */
   cursor: pointer;
-  padding-bottom: 59px;
+  padding-bottom: 29px;
 }
 footer .list {
   display: flex;
@@ -670,7 +671,7 @@ footer .list ul a:hover {
   ~ .content.content_strawberry
   h1 {
   color: black;
-  font-size: 64px;
+  font-size: 55px;
 }
 
 #scene
@@ -1031,14 +1032,39 @@ div.image-loader img {
 .our-partners {
   width: 100%;
 }
-.our-partners .partners {
+.our-partners .partners .partner-images {
   width: 100%;
 
-  justify-content: space-evenly;
-  display: inline-flex;
+  display: inline-block;
+  margin: auto;
+
+
 }
 .our-partners img {
-  margin-top: 89px;
-  margin-bottom: 444px;
+  width: 450px;
+  height: 150px;
+  /* margin-top: 89px;
+  margin-bottom: 144px; */
   background-size: contain;
+  /* margin-bottom: 190px; */
+  margin: auto;
+
+
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #c8c8c8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5EB7B7;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #11999e;
 }
