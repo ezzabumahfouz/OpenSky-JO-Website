@@ -112,9 +112,9 @@
 .line {
   height: 1px;
   width: 97%;
-  background-color: #100f0f;
+  background-color: #000000;
   margin: auto;
-  margin-top: 123px;
+  /* margin-top: 123px; */
 }
 .header h1 {
   font-size: 24px;
@@ -146,31 +146,35 @@
   width: 61%;
   margin-left: 39%;
   margin-bottom: 46px;
+  height: 150px;
 }
 .dev2 {
   font-size: 24px;
   font-weight: 500;
+  text-align: start;
 }
 .dev3 {
   font-size: 24px;
-  font-weight: 700;
-  margin-right: 74px;
-  margin-top: 74px;
-  width: 40%;
+  font-weight: 500;
+  margin-right: 24px;
+  /* margin-top: 24px; */
+  width: 50%;
 }
 .address .mail {
   justify-content: space-between;
-  display: flex;
+  display:flex;
   align-items: center;
   width: 61%;
   margin-left: 39%;
+  height: 150px;
+
 }
 .address .line2 {
   height: 1px;
   width: 70%;
   background-color: #100f0f;
   margin-left: 30%;
-  margin-top: 123px;
+  /* margin-top: 123px; */
   align-self: flex-end;
 }
 .address .socialMedia {
@@ -179,17 +183,21 @@
   align-items: center;
   width: 61%;
   margin-left: 39%;
+  height: 150px;
 }
-.address .socialMedia ul {
-  list-style: none;
-}
-.address .socialMedia ul li a {
+.address  a {
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 24px;
   line-height: 29.26px;
   color: #000000;
+  transition: 0.2s;
 }
+.address  a:hover {
+  color: #11999e;
+  letter-spacing: 0.3px;
+}
+
 .contact {
   width: 100%;
 }
