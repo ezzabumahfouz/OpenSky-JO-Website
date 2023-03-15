@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../style/newsStyle.css">
@@ -7,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News | Open Sky</title>
 </head>
+
 <body>
     <header class="navbar">
 
@@ -21,13 +23,13 @@
                     <a href="screens/management.html">Management</a>
                 </div>
             </div>
-    
+
             <!-- <a href="javascript:history.back()">Home</a> -->
             <a class="hover-underline-animation" href="javascript:history.back()">Business Solution</a>
             <a class="hover-underline-animation" href="javascript:history.back()">Product</a>
             <a class="hover-underline-animation" href="news.html">News</a>
             <a class="hover-underline-animation" href="getintouchPage.html">Get in Touch</a>
-    
+
         </div>
         <div class="dropdown">
             <div class="dropdown">
@@ -36,7 +38,76 @@
             </div>
         </div>
 
-    </header>    
-</body>
-</html>
+    </header>
+    <div class="careers">
+        <div class="apply-text">
+            News
+        </div>
+        <div class="careers-class">
+            <div class="job">
+                <h3><span class="p1">
+                        We are thrilled to announce that we have partnered with Autosphere, a leading provider of
+                        Robotic Process Automation (RPA) solutions, to offer customers a unique opportunity to
+                        streamline their business processes.
 
+
+
+                        The partnership combines Open Sky's expertise in information technology with Autosphere's
+                        cutting-edge RPA technology to deliver a powerful solution for businesses looking to automate
+                        their manual processes. This partnership allows businesses to improve their efficiency, reduce
+                        operational costs, and enhance customer satisfaction.
+
+
+
+                        RPA technology automates repetitive, rule-based tasks and processes, freeing up time for
+                        employees to focus on higher-value activities. The combination of RPA technology and information
+                        technology creates a scalable and flexible solution that can be customized to meet the unique
+                        needs of each business.
+
+
+
+                        Open Sky and Autosphere are excited about this partnership and the opportunity to deliver real
+                        value to their customers. They are committed to providing the highest quality of service and
+                        support to ensure the success of their customers.
+
+
+
+                        This partnership is just the latest example of our commitment to providing innovative solutions
+                        to our customers. With our extensive experience in information technology and Autosphere's
+                        expertise in RPA technology, businesses can now take advantage of a powerful solution that will
+                        drive growth and increase efficiency.
+
+                    </span>
+                    <button class="More">...Show More</button>
+
+
+                </h3>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        document.querySelectorAll('button.More').forEach(bttn => {
+            bttn.dataset.state = 0;
+            bttn.addEventListener('click', function (e) {
+                let span = this.previousElementSibling;
+                span.dataset.tmp = span.textContent;
+                span.textContent = span.dataset.content;
+                span.dataset.content = span.dataset.tmp;
+
+                this.innerHTML = this.dataset.state == 1 ? 'Show More...' : 'Show Less...';
+                this.dataset.state = 1 - this.dataset.state;
+            })
+        });
+
+        document.querySelectorAll('span.p1').forEach(span => {
+            span.dataset.content = span.textContent;
+            span.textContent = span.textContent.substr(0, 650);
+        })
+
+    </script>
+
+</body>
+
+</html>

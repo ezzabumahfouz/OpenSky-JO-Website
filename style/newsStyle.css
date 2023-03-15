@@ -125,6 +125,55 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+/* Body */
+
+.careers {
+  width: 100%;
+
+}
+.careers .apply-text {
+  font-size: 5vw;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 85px;
+  font-weight: bolder;
+  color: black;
+}
+.careers .careers-class {
+  width: 100%;
+  margin: 85px 0px;
+  
+  
+
+}
+.careers .careers-class .job {
+  border: 1px solid black;
+  width: 90%;
+  Offset: 10px, 4px
+rgba(0, 0, 0, 0.25)
+;
+border-radius: 15px;
+padding: 22px 35px ;
+box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25);
+margin:auto;
+
+
+}
+.careers .careers-class .job h3 {
+  font-weight: 500;
+  font-size: 18px;
+  /* text-align: start; */
+}
+
+.careers  button{
+  background-color: transparent;
+  border: 0;
+  font-weight: 700;
+  font-size: 18px;
+  color: #11999e;
+  cursor: pointer;
+
+}
 
 ::-webkit-scrollbar {
   width: 10px;
