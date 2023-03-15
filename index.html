@@ -18,7 +18,7 @@
 
     <header class="navbar">
 
-        <a href="#home"><img class="logo" src="assets/images/opanSkySoftware.png"></a>
+        <a href="index.html"><img class="logo" src="assets/images/opanSkySoftware.png"></a>
         <div class="nav-pages">
             <div class="dropdown">
                 <button class="dropbtn">About
@@ -31,12 +31,12 @@
             </div>
     
             <!-- <a href="javascript:history.back()">Home</a> -->
-            <a href="#section2">Business Solution</a>
-            <a href="#section3">Product</a>
-            <a href="../screens/news.html">News</a>
-            <a href="../screens/getintouchPage.html">Get in Touch</a>
+            <a class="hover-underline-animation" href="#section2">Business Solution</a>
+            <a class="hover-underline-animation" href="#section3">Product</a>
+            <a class="hover-underline-animation" href="../screens/news.html">News</a>
+            <a class="hover-underline-animation" href="../screens/getintouchPage.html">Get in Touch</a>
     
-        </div>        <div class="dropdown">
+        </div>       
             <div class="dropdown">
                 <a href="#home"><img class="flag" src="assets/images/jordan (1).png"></a>
             </div>
@@ -258,12 +258,12 @@
         }
     </style>
     <script>
-        // if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
-        //     document.getElementById("collapse").classList.toggle("hide");
-        // }
-        // else if (performance.navigation.type == performance.navigation.TYPE_BACK_FORWARD) {
-        //     document.getElementById("collapse").classList.toggle("hide");
-        // }
+        if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+            document.getElementById("collapse").classList.toggle("hide");
+        }
+        else if (performance.navigation.type == performance.navigation.TYPE_BACK_FORWARD) {
+            document.getElementById("collapse").classList.toggle("hide");
+        }
 
 
         function toggle() {
