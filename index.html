@@ -44,6 +44,7 @@
 
 
     </header>
+    
 
 
 
@@ -59,7 +60,7 @@
 
     <div id="collapse" class="show">
         <h1>
-            Technology is the great <br> equalizer, breaking down <br> barriers and opening up new <br> opportunities
+            Technology is the great equalizer,  <br> breaking down barriers and opening up new <br> opportunities
             for all. </h1>
 
 
@@ -183,6 +184,7 @@
                 transition: all 1s;
                 position: fixed;
                 overflow: hidden;
+                display: block;
                 top: 0;
                 bottom: 0;
 
@@ -191,14 +193,15 @@
                 animation-fill-mode: both;
 
                 z-index: 1000;
+                background-size: cover;
 
             }
 
             .show h1 {
                 /* margin-top: 100px; */
                 color: black;
-                margin:80px 30px;
-                font-size: 26px;
+                margin:100px 30px;
+                font-size: 30px;
                 font-weight: 600;
                 -webkit-animation: leftToRight 1.0s linear;
                 animation: zoomin 2.0s linear;
@@ -295,12 +298,12 @@
     <div class="aboutUs" id="section1">
         <h1>About Us</h1>
 
-        <h2>
+        <p>
             Open Sky Jordan is a Jordan-based company part of the Open Sky group of companies that operate in Three
             countries (Jordan, Egypt and UAE). The company’s main focus is to act as a reselling and staff augmentation
             company for the main players in the ICT industry. Open Sky has delivered multiple successful projects in the
             staff augmentation, telecom sales, Digital transformation and e-commerce fields.
-        </h2>
+        </p>
 
         <h4>
             01
@@ -746,6 +749,32 @@
                     <input type="text" name="email" id="email" placeholder="E-mail">
 
                 </form>
+
+
+
+                <!--  -->
+
+
+                <form method="post">
+                    <input type="button" value="Send Email" onclick="sendEmail()"/>
+                </form>  
+            
+<script>
+    function sendEmail() {
+	Email.send({
+	Host: "smtp.gmail.com",
+	Username : "<sender’s email address>",
+	Password : "<email password>",
+	To : 'ezoahmed5@gmail.com',
+	From : "salah@gmail.com",
+	Subject : "Test email",
+	Body : "<email body>",
+	}).then(
+		message => alert("mail sent successfully")
+	);
+}
+
+</script>           
 
 
             </li>
