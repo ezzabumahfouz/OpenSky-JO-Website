@@ -11,11 +11,18 @@
   overflow: hidden;
   background-color: white;
   display: flex;
-  align-items: center;
-  width: 100%;
+  flex-flow: row wrap;
   justify-content: space-between;
+  align-items: center;
   }
-
+  .navbar .nav-pages {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+      
+  
+  }
 .navbar a {
   float: left;
   font-size: 22px;  
@@ -24,7 +31,6 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  transition: 0.2s;
 
   
 }
@@ -58,15 +64,34 @@
   font-family: inherit;
   margin: 0;
   transition: 0.2s;
+  cursor: pointer;
+
 
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  letter-spacing: 1px;
-  color: #000000;
-
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #11999e;
 }
 
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #11999e;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 .dropdown-content {
   display: none;
   position: absolute;
@@ -86,9 +111,9 @@
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
-  font-size: 18px;  
-  font-weight: 400;
+  text-align: center;
+  font-size: 15px;  
+  font-weight: 500;
 }
 
 .dropdown-content a:hover {
@@ -106,7 +131,7 @@
   width: 100%;
   background-color: white;
   color: black;
-  padding-top: 186px;
+  padding-top: 16px;
 }
 .ourStory h6 {
   color: black;
@@ -122,7 +147,7 @@
 
 h1 {
   text-align: center;
-  font-size: 55px;
+  font-size: 81px;
   font-weight: 700;
 }
 
@@ -142,7 +167,7 @@ h1 {
 
 .aboutUs h1 {
   text-align: center;
-  font-size: 55px;
+  font-size: 81px;
   font-weight: 700;
   padding-top: 186px;
 
@@ -160,7 +185,7 @@ h1 {
 h4 {
   text-align: center;
   color: #11999e;
-  font-size: 55px;
+  font-size: 72px;
   /* line-height: 156.03px; */
   font-weight: 400;
    padding-top: 106px;
@@ -169,7 +194,7 @@ h4 {
 .carousal h4 {
   text-align: center;
   color: #11999e;
-  font-size: 55px;
+  font-size: 71px;
   /* line-height: 156.03px; */
   padding-top: 0px;
   font-weight: 400;
@@ -178,7 +203,7 @@ h4 {
 h5 {
   text-align: center;
   color: black;
-  font-size: 55px;
+  font-size: 81px;
   font-weight: 600;
   line-height: 156.03px;
 }
@@ -213,8 +238,9 @@ h6 {
   text-align: center;
   font-weight: 600;
   user-select: none;
-  font-size: 55px;
+  font-size: 81px;
   width: 100%;
+  letter-spacing: 10px;
 }
 
 .aboutUs .val {
@@ -406,6 +432,7 @@ footer .arrow img {
   height: 23px;
   margin: auto;
   display: block;
+  margin-top: 200px;
 }
 footer button {
   margin: auto;
@@ -671,7 +698,7 @@ footer .list ul a:hover {
   ~ .content.content_strawberry
   h1 {
   color: black;
-  font-size: 55px;
+  font-size: 81px;
 }
 
 #scene
@@ -1032,25 +1059,60 @@ div.image-loader img {
 .our-partners {
   width: 100%;
 }
-.our-partners .partners .partner-images {
+.our-partners .partner-images  {
   width: 100%;
 
-  display: inline-block;
-  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  /* align-items: center;
+  position: relative;
+  vertical-align:middle;  */
+  /* <---- this */
+  margin:   80px 0px;
+  
+
 
 
 }
 .our-partners img {
-  width: 450px;
-  height: 150px;
+  width: 200px;
+  height: 60px;
   /* margin-top: 89px;
   margin-bottom: 144px; */
   background-size: contain;
   /* margin-bottom: 190px; */
-  margin: auto;
 
 
 }
+.our-client .partner-images  {
+  width: 100%;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  /* align-items: center;
+  position: relative;
+  vertical-align:middle;  */
+  /* <---- this */
+  margin:   80px 0px;
+  
+
+
+
+}
+.our-client img {
+  width: 200px;
+  height: 60px;
+  /* margin-top: 89px;
+  margin-bottom: 144px; */
+  background-size: contain;
+  /* margin-bottom: 190px; */
+
+
+
+}
+
 
 ::-webkit-scrollbar {
   width: 10px;
