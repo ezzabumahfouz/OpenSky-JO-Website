@@ -1080,7 +1080,7 @@ div.image-loader img {
   height: 60px;
   /* margin-top: 89px;
   margin-bottom: 144px; */
-  background-size: contain;
+  background-size: cover;
   /* margin-bottom: 190px; */
 
 
