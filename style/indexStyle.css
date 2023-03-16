@@ -248,7 +248,6 @@
   .aboutUs .val {
     height: 70vh;
     width: 100vw;
-    background-color: transparent;
     position: relative;
     margin: auto;
     /* margin-bottom: 300px; */
@@ -1112,6 +1111,7 @@ footer .list ul a:hover {
 #scene #left-zone .list li.item input[type="radio"] ~ .content p {
   max-width: 80%;
   text-align: start;
+  margin: 0px;
 }
 #scene #left-zone .list li.item input[type="radio"]:checked ~ label {
   opacity: 1;
