@@ -15,8 +15,7 @@
     flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
-    }
-  
+  }
 }
 @media screen and (min-width: 501px) {
   .navbar {
@@ -26,8 +25,7 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    }
-  
+  }
 }
 .navbar .nav-pages {
   display: flex;
@@ -161,7 +159,6 @@
     font-weight: 500;
     width: 80%;
     margin: auto;
-
   }
 
   h1 {
@@ -212,7 +209,6 @@
     width: 80%;
     margin: auto;
     line-height: 50px;
-
   }
 
   h1 {
@@ -264,8 +260,19 @@
     font-size: 27px;
     font-weight: 300;
   }
-  
-  
+  .business-process h2 {
+    font-size: 12px;
+    color: white;
+    text-align: start;
+    /* line-height: 1.1; */
+  }
+
+  .business-process p {
+    font-family: var(--font-text);
+    font-size: 1.9vw;
+    line-height: 1.5;
+    color: var(--white);
+  }
 }
 @media screen and (min-width: 501px) {
   h5 {
@@ -291,11 +298,20 @@
     letter-spacing: 2px;
     word-spacing: 2px;
   }
-  
-  
-  
-}
+  .business-process h2 {
+    font-size: 3vw;
+    font-family: var(--font-title);
+    color: var(--white);
+    line-height: 1.1;
+  }
 
+  .business-process p {
+    font-family: var(--font-text);
+    font-size: 1.9vw;
+    line-height: 1.5;
+    color: var(--white);
+  }
+}
 
 #container {
   margin: auto;
@@ -477,10 +493,6 @@
 /*  */
 /* footer */
 
-footer {
-  /* height: 635px; */
-  width: 100%;
-}
 footer .line {
   height: 2px;
   width: 97%;
@@ -505,46 +517,90 @@ footer button {
   cursor: pointer;
   padding-bottom: 29px;
 }
-footer .list {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 24px;
-  list-style: none;
+@media screen and (max-width: 500px) {
+  footer .list {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    list-style: none;
+  }
+  .list3 button {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    float: right;
+  }
+
+  footer .list ul a {
+    font-size: 14px;
+    font-weight: 600px;
+    color: black;
+    text-decoration: none;
+    margin: 5px;
+
+    /* text-align: left; */
+    float: left;
+    /* text-align: left; */
+    transition: 0.1s;
+    opacity: 0.7;
+  }
+  footer .list3 input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: rgb(187, 187, 187);
+    width: 100%;
+    margin: 10px 0px;
+    transition: 0.1s;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px;
+  }
+  
 }
+@media screen and (min-width: 501px) {
+  footer .list {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 24px;
+    list-style: none;
+  }
+  .list3 button {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    float: right;
+  }
+
+  footer .list ul a {
+    font-size: 24px;
+    font-weight: 600px;
+    color: black;
+    text-decoration: none;
+    margin: 5px;
+
+    /* text-align: left; */
+    float: left;
+    /* text-align: left; */
+    transition: 0.1s;
+    opacity: 0.7;
+  }
+  footer .list3 input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: rgb(187, 187, 187);
+    width: 100%;
+    margin: 10px 0px;
+    transition: 0.1s;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px;
+  }
+  
+}
+
 footer ul {
   display: block;
   /* width: 32vw; */
-}
-.list3 button {
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 500;
-  float: right;
-}
-
-footer .list ul a {
-  font-size: 24px;
-  font-weight: 600px;
-  color: black;
-  text-decoration: none;
-  margin: 5px;
-
-  /* text-align: left; */
-  float: left;
-  /* text-align: left; */
-  transition: 0.1s;
-  opacity: 0.7;
-}
-footer .list3 input {
-  outline: 0;
-  border-width: 0 0 2px;
-  border-color: rgb(187, 187, 187);
-  width: 100%;
-  margin: 10px 0px;
-  transition: 0.1s;
-  font-size: 24px;
-  font-weight: 600;
-  padding: 10px;
 }
 footer .list3 input:focus {
   border-width: 0 0 3px;
@@ -955,19 +1011,6 @@ div.image-loader img {
 /* Remove default margin */
 
 /* GLOBAL STYLES */
-.business-process h2 {
-  font-size: 3vw;
-  font-family: var(--font-title);
-  color: var(--white);
-  line-height: 1.1;
-}
-
-.business-process p {
-  font-family: var(--font-text);
-  font-size: 1.9vw;
-  line-height: 1.5;
-  color: var(--white);
-}
 
 .flow > * + * {
   margin-top: var(--flow-space, 1em);
@@ -988,12 +1031,26 @@ div.image-loader img {
     width: 34.3%;
     /* margin-top: 44px; */
     /* max-width: 21.875rem; */
-    height: 280px;
+    height: 200px;
     cursor: pointer;
     overflow: hidden;
     /* box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25); */
   }
-  
+  .card__content {
+    /* --flow-space: 0.9375rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-end;
+    height: 85%;
+    padding: 15px;
+    /* background: linear-gradient(
+      180deg,
+      hsla(0, 0%, 0%, 0) 0%,
+      hsla(0, 0%, 0%, 0.3) 10%,
+      hsl(0, 0%, 0%) 100%
+    ); */
+  }
 }
 @media screen and (min-width: 501px) {
   .card {
@@ -1007,10 +1064,22 @@ div.image-loader img {
     overflow: hidden;
     /* box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25); */
   }
-  
+  .card__content {
+    /* --flow-space: 0.9375rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-end;
+    height: 85%;
+    padding: 12% 1.25rem 1.875rem;
+    /* background: linear-gradient(
+      180deg,
+      hsla(0, 0%, 0%, 0) 0%,
+      hsla(0, 0%, 0%, 0.3) 10%,
+      hsl(0, 0%, 0%) 100%
+    ); */
+  }
 }
-
-
 
 .card > * {
   grid-column: 1 / 2;
@@ -1023,32 +1092,14 @@ div.image-loader img {
   height: 100%;
 }
 
-.card__content {
-  --flow-space: 0.9375rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-self: flex-end;
-  height: 65%;
-  padding: 12% 1.25rem 1.875rem;
-  /* background: linear-gradient(
-    180deg,
-    hsla(0, 0%, 0%, 0) 0%,
-    hsla(0, 0%, 0%, 0.3) 10%,
-    hsl(0, 0%, 0%) 100%
-  ); */
-}
-
 .card__content--container {
   --flow-space: 1.25rem;
 }
 
 .card__title {
   position: relative;
-  /* width: fit-content;
-  height: fit-content; */
-  /* padding-bottom: 40px; */
-  font-size: 40px;
+  width: fit-content;
+  height: fit-content;
   width: -moz-fit-content;
 }
 
@@ -1161,16 +1212,13 @@ div.image-loader img {
     height: 50px;
     background-size: contain;
     object-fit: contain;
-
   }
   .our-partners img {
     width: 90px;
     height: 60px;
     background-size: contain;
     object-fit: contain;
-
   }
-  
 }
 @media screen and (min-width: 501px) {
   .our-client img {
@@ -1178,16 +1226,13 @@ div.image-loader img {
     height: 60px;
     background-size: contain;
     object-fit: contain;
-
   }
   .our-partners img {
     width: 200px;
     height: 50px;
     background-size: contain;
     object-fit: contain;
-
   }
-  
 }
 
 ::-webkit-scrollbar {
