@@ -252,7 +252,6 @@
     position: relative;
     margin: auto;
     /* margin-bottom: 300px; */
-    background-color: #c8c8c8;
   }
   
   .aboutUs .val .center {
@@ -397,7 +396,6 @@
   .aboutUs .val {
     height: 804px;
     width: 672px;
-    background-color: transparent;
     position: relative;
     margin: auto;
     /* margin-bottom: 300px; */
