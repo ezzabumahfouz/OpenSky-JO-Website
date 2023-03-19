@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style/indexStyle.css">
+    <link rel="icon" type="x-icon" href="assets/images/Untitled_design__2_-removebg-preview.png" sizes="16x16">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -29,22 +30,22 @@
                     <a href="screens/management.html">Management</a>
                 </div>
             </div>
-    
+
             <!-- <a href="javascript:history.back()">Home</a> -->
-            <a class="hover-underline-animation" href="#section2">Business Solution</a>
-            <a class="hover-underline-animation" href="#section3">Product</a>
+            <a class="hover-underline-animation" href="#section2">Business Solutions</a>
+            <a class="hover-underline-animation" href="#section3">Products</a>
             <a class="hover-underline-animation" href="screens/news.html">News</a>
             <a class="hover-underline-animation" href="screens/getintouchPage.html">Get in Touch</a>
-    
-        </div>       
-            <div class="dropdown">
-                <a href="#home"><img class="flag" src="assets/images/jordan (1).png"></a>
-            </div>
+
+        </div>
+        <div class="dropdown" >
+            <a href="#home" id="flagShow"><img class="flag" src="assets/images/jordan (1).png"></a>
+        </div>
         </div>
 
 
     </header>
-    
+
 
 
 
@@ -60,7 +61,7 @@
 
     <div id="collapse" class="show">
         <h1>
-            Technology is the great equalizer,  <br> breaking down barriers and opening up new <br> opportunities
+            Technology is the great equalizer, <br> breaking down barriers and opening up new <br> opportunities
             for all. </h1>
 
 
@@ -200,7 +201,7 @@
             .show h1 {
                 /* margin-top: 100px; */
                 color: black;
-                margin:100px 30px;
+                margin: 100px 30px;
                 font-size: 30px;
                 font-weight: 600;
                 -webkit-animation: leftToRight 1.0s linear;
@@ -334,7 +335,7 @@
             <div class="circle3" id="circle3" style="display:none"><a href="screens/company.html#value">Value</a></div>
             <div class="center">
                 <div class="centerButton">
-                    <button onclick="myFunction()">Show Up</button>
+                    <button onclick="myFunction()" id="btn">Show Up</button>
 
                 </div>
 
@@ -344,7 +345,7 @@
             02
         </h4>
         <h5>
-            Business Solution
+            Business Solutions
 
         </h5>
         <h6>
@@ -406,11 +407,316 @@
             03
         </h4>
         <h5>
-            Product
+            Products
 
         </h5>
         <div class="process">
-            <div id="scene">
+            <ul>
+                <li class="booking-card" style="background-image: url(https://images.unsplash.com/photo-1578944032637-f09897c5233d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ)">
+                  <div class="book-container">
+                    <div class="content">
+                      <h6 class="btn1">Montowear</h6>
+                    </div>
+                  </div>
+                  <div class="informations-container">
+                    <p class="sub-title">Since the beginning, we at MontoWear have been working hard to bring you beautiful , trendy, and sexy apparel , Practical, interesting and convenient. </p>
+                    <div class="more-information">
+                      <div class="info-and-date-container">
+                        <div class="box info">
+                          <p><a href="https://www.montowear.com/">www.montowear.com</a></p>
+                        </div>
+                      </div>
+                      <p class="disclaimer"><img src="assets/images/product1.png" alt=""></p>
+                    </div>
+                  </div>
+                </li>
+                <li class="booking-card" style="background-image: url(https://images.unsplash.com/photo-1580137197581-df2bb346a786?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);">
+                  <div class="book-container">
+                    <div class="content">
+                        <h6 class="btn2">Montotek</h6>
+
+                    </div>
+                  </div>
+                  <div class="informations-container">
+                    <p class="sub-title">From all different types of gadgets and accessories to tablets mobile phones – we give you access to everything you need and want.</p>
+                    <div class="more-information">
+                      <div class="info-and-date-container">
+                        <div class="box info">
+                            <p><a href="https://www.montotek.com/">www.montotek.com</a></p>
+
+                        </div>
+                      </div>
+                      <p class="disclaimer"><img src="assets/images/product2.png" alt=""></p>
+                    </div>
+                  </div>
+                </li>
+                <li class="booking-card" style="background-image: url(https://images.unsplash.com/photo-1579489225078-27977a77bf72?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);">
+                  <div class="book-container">
+                    <div class="content">
+                        <h6 class="btn3">YallaGift</h6>
+                    </div>
+                  </div>
+                  <div class="informations-container">
+                    <p class="sub-title">YallaGift is an online gifting e-store. It aims to make gifting high quality products easier for our clients to prove their , love, and respect to their beloved ones.</p>
+                    <div class="more-information">
+                      <div class="info-and-date-container">
+                        <div class="box info">
+                            <p><a href="https://yallagift.com/">yallagift.com</a></p>
+
+                        </div>
+                      </div>
+                      <p class="disclaimer"><img src="assets/images/product3.png"></p>
+                    </div>
+                  </div>
+                </li>
+                <li class="booking-card" style="background-image: url(https://images.unsplash.com/photo-1532509854226-a2d9d8e66f8e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);">
+                  <div class="book-container">
+                    <div class="content">
+                        <h6 class="btn4">YallaGym</h6>
+                    </div>
+                  </div>
+                  <div class="informations-container">
+                    <p class="sub-title">YallaGYM is an mobile App for the greater Middle East region, aiming to provide Gym visitors and users with on-demand access to their preferred GYM and Fitness Centers. </p>
+                    <div class="more-information">
+                      <div class="info-and-date-container">
+                        <div class="box info">
+                          <div class="icon">
+                            <img src="assets/icons/playstore.png">
+                          </div>
+                          <p><a href="https://play.google.com/store/apps/details?id=com.yallagym">Download</a></p>
+
+                        </div>
+                        <div class="box date">
+                            <div class="icon">
+                                <img src="assets/icons/app-store.png">
+                              </div>
+                              <p><a href="https://apps.apple.com/jo/app/yalla-gym/id1504220437">Get</a></p>
+
+                            </div>
+                      </div>
+                      <p class="disclaimer"><img src="assets/images/product4.png" alt=""></p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              
+                <style>
+                    ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+ul .booking-card {
+  position: relative;
+  width: 300px;
+  display: flex;
+  flex: 0 0 300px;
+  flex-direction: column;
+  margin: 20px;
+  margin-bottom: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  color: #0a4870;
+  transition: 0.3s;
+}
+ul .booking-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 72, 112, 0);
+  transition: 0.3s;
+}
+ul .booking-card .book-container {
+  height: 200px;
+}
+ul .booking-card .book-container .content {
+  position: relative;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  transform: translateY(-200px);
+  transition: 0.3s;
+}
+ul .booking-card .book-container .content .btn1 {
+  padding: 10px 15px;
+  background: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: white;
+  cursor: auto;
+  transition: 0.3s;
+}
+ul .booking-card .book-container .content .btn2 {
+  padding: 10px 15px;
+  background: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: white;
+  cursor: auto;
+  transition: 0.3s;
+}ul .booking-card .book-container .content .btn3 {
+  padding: 10px 15px;
+  background: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: white;
+  cursor: auto;
+  transition: 0.3s;
+}ul .booking-card .book-container .content .btn4 {
+  padding: 10px 15px;
+  background: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: white;
+  cursor: auto;
+  transition: 0.3s;
+}
+ul .booking-card .informations-container {
+  flex: 1 0 auto;
+  padding: 20px;
+  background: #f0f0f0;
+  transform: translateY(206px);
+  transition: 0.3s;
+}
+ul .booking-card .informations-container .title {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+ul .booking-card .informations-container .title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  width: 50px;
+  margin: auto;
+  background: #0a4870;
+}
+ul .booking-card .informations-container .price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+ul .icon img{
+  margin-right: 10px;
+  height: 24px;
+  width: 24px;
+  margin: auto;
+}
+
+ul .booking-card .informations-container .more-information {
+  opacity: 0;
+  transition: 0.3s;
+}
+ul .booking-card .informations-container .more-information .info-and-date-container {
+  display: flex;
+}
+ul .booking-card .informations-container .more-information .info-and-date-container .box {
+  flex: 1 0;
+  padding: 15px;
+  margin-top: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: white;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+ul .booking-card .informations-container .more-information .info-and-date-container .box .icon {
+  margin-bottom: 5px;
+}
+ul .booking-card .informations-container .more-information .info-and-date-container .box.info {
+  color: #ec992c;
+  margin-right: 10px;
+}
+ul .informations-container a{
+  color: #ec992c;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+ul .booking-card .informations-container .more-information .disclaimer img {
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #7d7d7d;
+  width: 120px;
+  height: 100px;
+  object-fit: contain;
+}
+ul .booking-card:hover::before {
+  background: rgba(10, 72, 112, 0.6);
+}
+ul .booking-card:hover .book-container .content {
+  opacity: 1;
+  transform: translateY(0px);
+}
+ul .booking-card:hover .informations-container {
+  transform: translateY(0px);
+}
+ul .booking-card:hover .informations-container .more-information {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  ul .booking-card::before {
+    background: rgba(10, 72, 112, 0.6);
+  }
+  ul .booking-card .book-container .content {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  ul .booking-card .informations-container {
+    transform: translateY(0px);
+  }
+  ul .booking-card .informations-container .more-information {
+    opacity: 1;
+  }
+}
+.credits {
+  display: table;
+  background: #0a4870;
+  color: white;
+  line-height: 25px;
+  margin: 10px auto;
+  padding: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.credits a {
+  color: #e3ebf1;
+}
+
+h1 {
+  margin: 10px 20px;
+}
+                </style>              
+            <!-- <div id="scene">
                 <div id="left-zone">
                     <ul class="list">
                         <li class="item">
@@ -475,7 +781,7 @@
                 </div>
                 <div id="middle-border"></div>
                 <div id="right-zone"></div>
-            </div>
+            </div> -->
 
         </div>
 
@@ -537,7 +843,8 @@
                         <img src="assets/images/bac4.jpeg">
                     </div>
                     <p>Focusing on avail and assure is <br> crucial for a business process solution <br> that meets
-                        customer needs, <br> drives long-term success, <br> with quality control, customer <br> service, and
+                        customer needs, <br> drives long-term success, <br> with quality control, customer <br> service,
+                        and
                         ongoing improvement
                     </p>
 
@@ -579,9 +886,9 @@
             06
         </h4>
         <h5>
-            Our Client
+            Our Clients
         </h5>
-        <div class="client">
+        <!-- <div class="client">
             <div class="partner-images">
                 <img src="assets/images/naitel.png">
                 <img src="assets/images/inovar.png">
@@ -590,7 +897,7 @@
 
             </div>
 
-        </div>
+        </div> -->
 
     </div>
 
@@ -608,266 +915,270 @@
             display: flex;
 
         }
+
         @media screen and (max-width: 500px) {
             .carousal-slider .carousal-border {
-            height: 490px;
-            width: 300px;
-            /* padding-top: 10px; */
-            position: relative;
-            margin: 10px;
-        }
-        .carousal-slider .carousal-border .background1 {
-            height: 400px;
-            width: 300px;
-            background-color: black;
-            position: relative;
-            bottom: 0;
-top: 40px;
-        }
-        .carousal-slider .carousal-border .background2 {
-            height: 400px;
-            width: 300px;
-            background-color: #9ED4D4;
-            position: relative;
-            bottom: 0;
-top: 40px;
-        }
-        .carousal-slider .carousal-border .background3 {
-            height: 400px;
-            width: 300px;
-            background-color: black;
-            position: relative;
-            bottom: 0;
-top: 40px;
-        }
-        .carousal-slider .carousal-border .background4 {
-            height: 400px;
-            width: 300px;
-            background-color: #9ED4D4;
-            position: relative;
-            bottom: 0;
-top: 40px;
-        }
-        .background4 p {
-            text-align: start;
-            font-size: 12px;
-            width: 270px;
-            padding: 10px;
-        }
+                height: 490px;
+                width: 300px;
+                /* padding-top: 10px; */
+                position: relative;
+                margin: 10px;
+            }
+
+            .carousal-slider .carousal-border .background1 {
+                height: 400px;
+                width: 300px;
+                background-color: black;
+                position: relative;
+                bottom: 0;
+                top: 40px;
+            }
+
+            .carousal-slider .carousal-border .background2 {
+                height: 400px;
+                width: 300px;
+                background-color: #9ED4D4;
+                position: relative;
+                bottom: 0;
+                top: 40px;
+            }
+
+            .carousal-slider .carousal-border .background3 {
+                height: 400px;
+                width: 300px;
+                background-color: black;
+                position: relative;
+                bottom: 0;
+                top: 40px;
+            }
+
+            .carousal-slider .carousal-border .background4 {
+                height: 400px;
+                width: 300px;
+                background-color: #9ED4D4;
+                position: relative;
+                bottom: 0;
+                top: 40px;
+            }
+
+            .background4 p {
+                text-align: start;
+                font-size: 12px;
+                width: 270px;
+                padding: 10px;
+            }
 
 
 
-        .carousal-slider .carousal1 img {
-            width: 221px;
-            height: 201px;
-            background-size: cover;
-            margin-left: 40.5px;
-            border-radius: 5px;
-            position: absolute;
-            top: 50px;
+            .carousal-slider .carousal1 img {
+                width: 221px;
+                height: 201px;
+                background-size: cover;
+                margin-left: 40.5px;
+                border-radius: 5px;
+                position: absolute;
+                top: 50px;
 
-        }
-        .carousal-slider .carousal-border h1 {
-            color: #11999E;
-            font-weight: 900;
-            font-size: 40px;
-            position: relative;
-            top: -25px;
-            text-align: center;
-        }
+            }
 
-        .carousal-slider .carousal-border p {
-            /* position: absolute; */
-            /* width: 290px; */
-            color: #F5F5F5;
-            /* margin: 5px; */
-            /* padding-top: 30px; */
-            font-size: 3.4vw;
-            text-align: center;
-            /* position: absolute;
+            .carousal-slider .carousal-border h1 {
+                color: #11999E;
+                font-weight: 900;
+                font-size: 40px;
+                position: relative;
+                top: -25px;
+                text-align: center;
+            }
+
+            .carousal-slider .carousal-border p {
+                /* position: absolute; */
+                /* width: 290px; */
+                color: #F5F5F5;
+                /* margin: 5px; */
+                /* padding-top: 30px; */
+                font-size: 3.4vw;
+                text-align: center;
+                /* position: absolute;
             bottom: 35px; */
-            word-wrap: normal;
-            margin-top: 220px;
+                word-wrap: normal;
+                margin-top: 220px;
 
-        }
-        .carousal-slider .carousal2 img {
-            width: 221px;
-            height: 201px;
-            background-size: cover;
-            margin-left: 40.5px;
-            border-radius: 5px;
-            position: absolute;
-            top: 50px;
+            }
 
-
-        }
-
-        .carousal-slider .carousal3 img {
-            width: 221px;
-            height: 201px;
-            background-size: cover;
-            margin-left: 40.5px;
-            border-radius: 5px;
-            position: absolute;
-            top: 50px;
+            .carousal-slider .carousal2 img {
+                width: 221px;
+                height: 201px;
+                background-size: cover;
+                margin-left: 40.5px;
+                border-radius: 5px;
+                position: absolute;
+                top: 50px;
 
 
-        }
+            }
 
-        .carousal-slider .carousal4 img {
-            width: 221px;
-            height: 201px;
-            background-size: cover;
-            margin-left: 40.5px;
-            border-radius: 5px;
-            position: absolute;
-            top: 50px;
-
-
-        }
+            .carousal-slider .carousal3 img {
+                width: 221px;
+                height: 201px;
+                background-size: cover;
+                margin-left: 40.5px;
+                border-radius: 5px;
+                position: absolute;
+                top: 50px;
 
 
+            }
+
+            .carousal-slider .carousal4 img {
+                width: 221px;
+                height: 201px;
+                background-size: cover;
+                margin-left: 40.5px;
+                border-radius: 5px;
+                position: absolute;
+                top: 50px;
+
+
+            }
 
 
 
-  
-}
-@media screen and (min-width: 501px) {
-    .carousal-slider .carousal-border {
-            height: 740px;
-            width: 600px;
-            /* padding-top: 10px; */
-            position: relative;
-            margin: 10px;
-        }
-        .carousal-slider .carousal-border .background1 {
-            height: 725px;
-            width: 600px;
-            background-color: black;
-            position: relative;
-            bottom: 0;
-top: 40px;
-        }
-        .carousal-slider .carousal1 img {
-            width: 421px;
-            height: 401px;
-            background-size: cover;
-            margin-left: 89.5px;
-            border-radius: 5px;
-            position: absolute;
-            top: 50px;
 
-        }
-        .carousal-slider .carousal-border .background2 {
-            height: 705px;
-            width: 600px;
-            background-color: #9ED4D4;
-            position: relative;
-            bottom: 0;
-            bottom: -45px;
-
-        }
-
-        .carousal-slider .carousal-border .background3 {
-            height: 705px;
-            width: 600px;
-            background-color: black;
-            position: relative;
-            bottom: -45px;
-
-        }
-
-        .carousal-slider .carousal-border .background4 {
-            height: 705px;
-            width: 600px;
-            background-color: #9ED4D4;
-            position: relative;
-            bottom: 0;
-            bottom: -45px;
-
-        }
-        .carousal-slider .carousal-border h1 {
-            color: #11999E;
-            font-weight: 900;
-            font-size: 60px;
-            position: relative;
-            top: -45px;
-            text-align: center;
-        }
-
-        .carousal-slider .carousal-border p {
-            /* position: absolute; */
-            width: 100%;
-            color: #F5F5F5;
-            /* bottom: 25px; */
-            /* padding-top: 30px; */
-            font-size: 19px;
-            text-align: center;
-            position: absolute;
-            bottom: 92px;
-            word-wrap:initial  ;
-
-        }
-        .carousal-slider .carousal2 img {
-            width: 421px;
-            height: 401px;
-            background-size: cover;
-            margin-left: 89.5px;
-            border-radius: 5px;
-            position: absolute;
-            top: 50px;
 
 
         }
 
-        .carousal-slider .carousal3 img {
-            width: 421px;
-            height: 401px;
-            background-size: cover;
-            margin-left: 89.5px;
-            border-radius: 5px;
-            position: absolute;
-            top: 50px;
+        @media screen and (min-width: 501px) {
+            .carousal-slider .carousal-border {
+                height: 740px;
+                width: 600px;
+                /* padding-top: 10px; */
+                position: relative;
+                margin: 10px;
+            }
+
+            .carousal-slider .carousal-border .background1 {
+                height: 725px;
+                width: 600px;
+                background-color: black;
+                position: relative;
+                bottom: 0;
+                top: 40px;
+            }
+
+            .carousal-slider .carousal1 img {
+                width: 421px;
+                height: 401px;
+                background-size: cover;
+                margin-left: 89.5px;
+                border-radius: 5px;
+                position: absolute;
+                top: 50px;
+
+            }
+
+            .carousal-slider .carousal-border .background2 {
+                height: 705px;
+                width: 600px;
+                background-color: #9ED4D4;
+                position: relative;
+                bottom: 0;
+                bottom: -45px;
+
+            }
+
+            .carousal-slider .carousal-border .background3 {
+                height: 705px;
+                width: 600px;
+                background-color: black;
+                position: relative;
+                bottom: -45px;
+
+            }
+
+            .carousal-slider .carousal-border .background4 {
+                height: 705px;
+                width: 600px;
+                background-color: #9ED4D4;
+                position: relative;
+                bottom: 0;
+                bottom: -45px;
+
+            }
+
+            .carousal-slider .carousal-border h1 {
+                color: #11999E;
+                font-weight: 900;
+                font-size: 60px;
+                position: relative;
+                top: -45px;
+                text-align: center;
+            }
+
+            .carousal-slider .carousal-border p {
+                /* position: absolute; */
+                width: 100%;
+                color: #F5F5F5;
+                /* bottom: 25px; */
+                /* padding-top: 30px; */
+                font-size: 19px;
+                text-align: center;
+                position: absolute;
+                bottom: 92px;
+                word-wrap: initial;
+
+            }
+
+            .carousal-slider .carousal2 img {
+                width: 421px;
+                height: 401px;
+                background-size: cover;
+                margin-left: 89.5px;
+                border-radius: 5px;
+                position: absolute;
+                top: 50px;
+
+
+            }
+
+            .carousal-slider .carousal3 img {
+                width: 421px;
+                height: 401px;
+                background-size: cover;
+                margin-left: 89.5px;
+                border-radius: 5px;
+                position: absolute;
+                top: 50px;
+
+
+            }
+
+            .carousal-slider .carousal4 img {
+                width: 421px;
+                height: 401px;
+                background-size: cover;
+                margin-left: 89.5px;
+                border-radius: 5px;
+                position: absolute;
+                top: 50px;
+
+
+            }
+
+            .background4 p {
+                text-align: start;
+                font-size: 12px;
+                width: 100%;
+                /* padding: 10px; */
+            }
+
+
+
+
+
 
 
         }
-
-        .carousal-slider .carousal4 img {
-            width: 421px;
-            height: 401px;
-            background-size: cover;
-            margin-left: 89.5px;
-            border-radius: 5px;
-            position: absolute;
-            top: 50px;
-
-
-        }
-        .background4 p {
-            text-align: start;
-            font-size: 12px;
-            width: 100%;
-            /* padding: 10px; */
-        }
-
-
-
-
-
-
-  
-}
-
-
-
-
-
-
-
-
-
-
-
     </style>
 
 
@@ -911,23 +1222,23 @@ top: 40px;
                 <form method="post">
                     <input type="button" value="Send Email" onclick="sendEmail()"/>
                 </form>   -->
-            
-<script>
-    function sendEmail() {
-	Email.send({
-	Host: "smtp.gmail.com",
-	Username : "<sender’s email address>",
-	Password : "<email password>",
-	To : 'ezoahmed5@gmail.com',
-	From : "salah@gmail.com",
-	Subject : "Test email",
-	Body : "<email body>",
-	}).then(
-		message => alert("mail sent successfully")
-	);
-}
 
-</script>           
+                <script>
+                    function sendEmail() {
+                        Email.send({
+                            Host: "smtp.gmail.com",
+                            Username: "<sender’s email address>",
+                            Password: "<email password>",
+                            To: 'ezoahmed5@gmail.com',
+                            From: "salah@gmail.com",
+                            Subject: "Test email",
+                            Body: "<email body>",
+                        }).then(
+                            message => alert("mail sent successfully")
+                        );
+                    }
+
+                </script>
 
 
             </li>
@@ -1044,21 +1355,30 @@ top: 40px;
         animate();
     </script>
     <script>
+        var w = window.innerWidth;
+        var flag = document.getElementById("flagShow");
+        if (w<600) {
+            flag.style.display = "none";
+        }
         function myFunction() {
             var c1 = document.getElementById("circle1");
             var c2 = document.getElementById("circle2");
             var c3 = document.getElementById("circle3");
+            var btn = document.getElementById("btn");
 
 
             if (c1.style.display === "none") {
                 c1.style.display = "block";
                 c2.style.display = "block";
                 c3.style.display = "block";
+              btn.textContent = 'Close it';
 
             } else {
                 c1.style.display = "none";
                 c2.style.display = "none";
                 c3.style.display = "none";
+                btn.textContent = 'Show Up';
+
 
             }
         }
