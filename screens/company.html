@@ -34,7 +34,7 @@
     
         </div>       
             <div class="dropdown">
-                <a href="javascript:history.back()"><img class="flag" src="../assets/images/jordan (1).png"></a>
+                <a id="flagShow"><img class="flag" src="../assets/images/jordan (1).png"></a>
             </div>
         </div>
 
@@ -101,7 +101,14 @@
 
 
     </div>
+<script>
+            var w = window.innerWidth;
+        var flag = document.getElementById("flagShow");
+        if (w<1160) {
+            flag.style.display = "none";
+        }
 
+</script>
 
 </body>
 

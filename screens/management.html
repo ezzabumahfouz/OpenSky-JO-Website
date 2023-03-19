@@ -39,13 +39,20 @@
             </div>
             
             </div>
-                <div class="dropdown">
-                    <a href=""><img class="flag" src="../assets/images/jordan (1).png"></a>
+                <div class="dropdown" >
+                    <a id="flagShow"><img class="flag" src="../assets/images/jordan (1).png"></a>
             </div>
 
 
         </header>
+        <script>
+                    var w = window.innerWidth;
+        var flag = document.getElementById("flagShow");
+        if (w<1160) {
+            flag.style.display = "none";
+        }
 
+        </script>
 
     </body>
 
