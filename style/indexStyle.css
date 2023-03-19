@@ -7,7 +7,7 @@
   scroll-behavior: smooth;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1040px) {
   .navbar {
     overflow: hidden;
     background-color: white;
@@ -17,7 +17,7 @@
     align-items: center;
   }
 }
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 1041px) {
   .navbar {
     overflow: hidden;
     background-color: white;
