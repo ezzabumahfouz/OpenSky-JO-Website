@@ -412,7 +412,7 @@
         </h5>
         <div class="process">
             <ul>
-                <li class="booking-card" style="background-image: url(https://images.unsplash.com/photo-1578944032637-f09897c5233d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ)">
+                <li class="booking-card" style="background-image: url(assets/images/pexels-evg-kowalievska-1148957.jpg)">
                   <div class="book-container">
                     <div class="content">
                       <h6 class="btn1">Montowear</h6>
@@ -430,7 +430,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="booking-card" style="background-image: url(https://images.unsplash.com/photo-1580137197581-df2bb346a786?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);">
+                <li class="booking-card" style="background-image: url(assets/images/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg);">
                   <div class="book-container">
                     <div class="content">
                         <h6 class="btn2">Montotek</h6>
@@ -450,7 +450,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="booking-card" style="background-image: url(https://images.unsplash.com/photo-1579489225078-27977a77bf72?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);">
+                <li class="booking-card" style="background-image: url(assets/images/pexels-george-dolgikh-1303087.jpg);">
                   <div class="book-container">
                     <div class="content">
                         <h6 class="btn3">YallaGift</h6>
@@ -469,7 +469,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="booking-card" style="background-image: url(https://images.unsplash.com/photo-1532509854226-a2d9d8e66f8e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);">
+                <li class="booking-card" style="background-image: url(assets/images/yallagymBK.jpg);">
                   <div class="book-container">
                     <div class="content">
                         <h6 class="btn4">YallaGym</h6>
@@ -554,29 +554,27 @@ ul .booking-card .book-container .content {
 }
 ul .booking-card .book-container .content .btn1 {
   padding: 10px 15px;
-  background: none;
   text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1.3em;
+  font-weight: 500;
+  font-size: 35px;
   color: white;
   cursor: auto;
   transition: 0.3s;
 }
 ul .booking-card .book-container .content .btn2 {
   padding: 10px 15px;
-  background: none;
   text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1.3em;
-  color: white;
+  font-weight: 900;
+  font-size: 35px;
   cursor: auto;
   transition: 0.3s;
+  color: #537FE7;
 }ul .booking-card .book-container .content .btn3 {
   padding: 10px 15px;
   background: none;
   text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1.3em;
+  font-weight: 500;
+  font-size: 35px;
   color: white;
   cursor: auto;
   transition: 0.3s;
@@ -585,10 +583,17 @@ ul .booking-card .book-container .content .btn2 {
   background: none;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.3em;
-  color: white;
+  font-size: 35px;
   cursor: auto;
   transition: 0.3s;
+  text-transform: capitalize;
+
+background: linear-gradient(90.38deg, #E9E825 3.24%, #9ECB2F 108.48%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+/* text-fill-color: transparent; */
+
 }
 ul .booking-card .informations-container {
   flex: 1 0 auto;
@@ -668,8 +673,17 @@ ul .booking-card .informations-container .more-information .disclaimer img {
   object-fit: contain;
 }
 ul .booking-card:hover::before {
-  background: rgba(10, 72, 112, 0.6);
-}
+  /* background: #7d7d7d; */
+  /* From https://css.glass */
+/* From https://css.glass */
+/* From https://css.glass */
+/* From https://css.glass */
+/* From https://css.glass */
+background: rgba(0, 0, 0, 0.21);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.8px);
+-webkit-backdrop-filter: blur(2.8px);}
 ul .booking-card:hover .book-container .content {
   opacity: 1;
   transform: translateY(0px);
@@ -1409,8 +1423,26 @@ h1 {
         }
     </script>
 
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<input type="button" value="Send Email" onclick="sendEmail()">
 
+<script>
+    function sendEmail() {
+  Email.send({
+    Host : "smtp.mailtrap.io",
+    Username : "<Mailtrap username>",
+    Password : "<Mailtrap password>",
+    To : 'ezoahmed5@gmail.com',
+    From : "sender@example.com",
+    Subject : "Test email",
+    Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
+  }).then(
+    message => alert(message)
+  );
+}
 
+</script>
 </body>
 
 </html>
