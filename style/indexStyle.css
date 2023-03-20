@@ -300,6 +300,8 @@
     text-align: center;
     animation-name: example1;
     animation-duration: 2s;
+    transition: example1 0.6s linear;
+
   }
   
   .aboutUs .val .circle2 {
@@ -622,7 +624,7 @@
     font-size: 2.5vw;
     font-family: var(--font-title);
     color: var(--white);
-    line-height: 1.1;
+    line-height: 1.4;
   }
 
   .business-process p {
@@ -1253,13 +1255,8 @@ div.image-loader img {
     align-self: flex-end;
     height: 85%;
     padding: 15px;
-    /* background: linear-gradient(
-      180deg,
-      hsla(0, 0%, 0%, 0) 0%,
-      hsla(0, 0%, 0%, 0.3) 10%,
-      hsl(0, 0%, 0%) 100%
-    ); */
-  }
+/* From https://css.glass */
+ }
 }
 @media screen and (min-width: 501px) {
   .card {
@@ -1280,14 +1277,15 @@ div.image-loader img {
     justify-content: space-between;
     align-self: flex-end;
     height: 85%;
-    padding: 12% 1.25rem 1.875rem;
-    /* background: linear-gradient(
-      180deg,
-      hsla(0, 0%, 0%, 0) 0%,
-      hsla(0, 0%, 0%, 0.3) 10%,
-      hsl(0, 0%, 0%) 100%
-    ); */
-  }
+    padding: 8% 1.25rem 1.875rem;
+    /* From https://css.glass */
+background: rgba(211, 212, 197, 0.03);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.5px);
+-webkit-backdrop-filter: blur(5.5px);
+border: 1px solid rgba(211, 212, 197, 0.01);
+ }
 }
 
 .card > * {
