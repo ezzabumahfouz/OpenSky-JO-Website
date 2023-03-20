@@ -195,6 +195,14 @@
     text-align: center;
     background-color: #100f0f;
   }
+  .ourStory h1 {
+    margin: 50px 0px 70px 0px;
+
+  }
+  .aboutUs h1 {
+    margin: 50px 0px 70px 0px;
+
+  }
   .ourStory p {
     font-size: 25px;
     font-weight: 500;
@@ -230,6 +238,8 @@
     font-size: 81px;
     width: 100%;
     letter-spacing: 10px;
+    margin: 50px 0px 70px 0px;
+
   }
 }
 
